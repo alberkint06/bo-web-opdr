@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+body > header{
+    height: 10rem;
+    display: flex;
+}
+
+body > header{
+    background-color: #111111;
+}
+
+body > header > .headerTitle{
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > header > .zonnehuisText{
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+body > header > img{
+    display: flex;
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
