@@ -15,18 +15,15 @@ body{
 body > header{
     height: 10rem;
     display: flex;
-}
-
-body > header{
     background-color: #111111;
+    align-items: center;
 }
 
 body > header > .headerTitle{
     color: white;
     font-size: 1.6rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 body > header > .zonnehuisText{
