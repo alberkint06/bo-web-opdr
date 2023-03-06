@@ -12,18 +12,11 @@ body{
     font-family: sans-serif;
 }
 
-body > header{
+body > header, footer{
     height: 10rem;
     display: flex;
     background-color: #111111;
     align-items: center;
-}
-
-body > header > .headerTitle{
-    color: white;
-    font-size: 1.6rem;
-    display: flex;
-    position: relative;
 }
 
 body > header > .zonnehuisText{
@@ -33,11 +26,51 @@ body > header > .zonnehuisText{
     align-items: center;
 }
 
+body > footer > p{
+    color: white;
+}
+
 body > header > img{
     display: flex;
     width: 6.4rem;
     height: 6.4rem;
-    margin-top: 1.5rem;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
+    align-items: center;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+body > article{
+    padding: 2rem;
+}
+
+body > article > .bodyTitle{
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: left;
+    margin-top: 2rem;
+    border-bottom: 1px solid #111111;
+    margin-bottom: 4rem;
+}
+
+body > article > div {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 10rem;
+    border: 2px solid #111111;
+    border-radius: 5px;
+    height: 20.1rem;
+    margin-right: 2rem;
+}
+
+div > img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+div > span {
+    display: block;
+    font-size: 2.8rem;
 }
