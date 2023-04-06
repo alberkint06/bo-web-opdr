@@ -38,3 +38,32 @@ function startTime(){
     }
     return currentTime;
   }
+  const block = document.getElementById("block");
+
+const labels = [
+  'January',
+  'Februari',
+  'March',
+  'April',
+  'May',
+  'June',
+];
+
+const consoles = {
+  labels: labels,
+  datasets:[
+      {
+          label: "verbruik",
+          data: [2000, 1800, 1200, 1350, 1284, 1174],
+          backgroundColors: ['#13005A', '#3A1078', '#3E54AC', '#655DBB']
+      }
+      
+  ]
+}
+
+const config = {
+  type: 'doughnut',
+  data: consoles,
+}
+
+const chart1 = new Chart(document.getElementById("js--grafiek1"), config);
