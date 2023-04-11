@@ -1,27 +1,5 @@
-const sunrise = document.getElementById("js--sunrise");
-const sunset = document.getElementById("js--sunset");
-const temp = document.getElementById("js--temp");
-const humidity = document.getElementById("js--humidity");
-
-let weather = fetch("https://api.open-meteo.com/v1/forecast?latitude=52.37&longitude=4.89&hourly=temperature_2m,relativehumidity_2m,rain,snowfall,cloudcover,windspeed_10m&daily=sunrise,sunset&current_weather=true&timezone=auto&current_weather=true&forecast_days=1")
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(realData){
-        console.log(realData);
-
-        const sunriseRise = realData.daily.sunrise[0];
-        sunrise.innerText = sunriseRise.slice(11,16) + " /";
-
-        const sunsetSet = realData.daily.sunset[0]; 
-        sunset.innerText = sunsetSet.slice(11, 16);
-
-        temp.innerHTML = realData.current_weather.temperature + "°C";
-        humidity.innerHTML = realData.hourly.relativehumidity_2m[0];
-    });
-
-
-function startTime(){
+let weater = fetch("")
+function startTime() {
     const today = new Date();
     let h = today.getHours();
     let m = today.getMinutes();
@@ -32,13 +10,23 @@ function startTime(){
     setTimeout(startTime, 1000);
   }
   
-  function checkTime(currentTime){
-    if (currentTime < 10) {
-        currentTime = "0" + currentTime;
-    }
+  function checkTime(currentTime) {
+    if (currentTime < 10) {currentTime = "0" + currentTime};
     return currentTime;
   }
-  const block = document.getElementById("block");
+
+  var request = new XMLHttpRequest();
+
+  request.open('GET', 'http://api.weatherapi.com/v1');
+
+  request.setRequestHeader('f52396f431bf4503858123339232703', []);
+
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    console.log
+  }
+};
+const block = document.getElementById("block");
 
 const labels = [
   'January',
@@ -67,3 +55,4 @@ const config = {
 }
 
 const chart1 = new Chart(document.getElementById("js--grafiek1"), config);
+
