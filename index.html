@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/app.js" defer></script>
 </head>
 <body onload="startTime()">
@@ -14,7 +15,7 @@
         <p class="zonnehuisText">Het Zonnehuis</p>
         <a href="engels.html" class="translateButton">EN</a>
     </header>
-    <article class="stats">
+    <article>
 
     <p class="bodyTitle0">Algemene Informatie</p>
     <div>
@@ -23,47 +24,48 @@
     </div>
     <div>
         <img src="img/weather.webp">
-        <span id="js--temp"></span>
+        <span>x*C</span>
     </div>
     <div>
         <img src="img/humidity.webp">
-        <span id="js--humidity"></span>
+        <span>x%</span>
     </div>
     <div>
         <img src="img/sunrise.webp">
-        <span id="js--sunrise"></span>
+        <span>00:00/</span>
         <br>
-        <span id="js--sunset"></span>
+        <span>00:00</span>
     </div>
 
     <p class="bodyTitle1">Binnentempraturen en Lichtsterktes</p>
     <div>
         <img src="img/livingroom.webp">
-        <span id="js--livingroom--temp"></span>
+        <span>x*C/</span>
         <br>
-        <span id="js--livingroom--light"></span>
+        <span>x</span>
     </div>
     <div>
         <img src="img/bathroom.webp">
-        <span id="js--bathroom--temp"></span>
+        <span>x*C/</span>
         <br>
-        <span id="js--bathroom--light"></span>
+        <span>x</span>
     </div>
     <div>
         <img src="img/bedroom.webp">
-        <span id="js--bedroom--temp"></span>
+        <span>x*C/</span>
         <br>
-        <span id="js--bedroom--light"></span>
+        <span>x</span>
     </div>
     <div>
         <img src="img/kitchen.webp">
-        <span id="js--kitchen--temp"></span>
+        <span>x*C/</span>
         <br>
-        <span id="js--kitchen--light"></span>
+        <span>x</span>
     </div>
-    
-    <p class="bodyTitle2">Grafische Weergaven</p>
+
+    <p class="bodyTitle2"> Grafieken</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <body>
             
 
         <!-- <canvas id="myChart" style="width:100%;max-width:6000px;max-height: 80%;"></canvas> -->
@@ -76,6 +78,7 @@
             <article class="card"></article>
         </section>
         </main>
+    </body>
     </article>
 </body>
 </html>
