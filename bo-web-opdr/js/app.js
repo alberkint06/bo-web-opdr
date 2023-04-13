@@ -42,13 +42,12 @@ function startTime(){
   }
   const block = document.getElementById("block");
 
+
 const labels = [
-  'January',
-  'Februari',
-  'March',
-  'April',
-  'May',
-  'June',
+"week 1",
+"week 2",
+"week 3", 
+"week 4"
 ];
 
 const consoles = {
@@ -56,8 +55,8 @@ const consoles = {
   datasets:[
       {
           label: "verbruik",
-          data: [2000, 1800, 1200, 1350, 1284, 1174],
-          backgroundColors: ['#13005A', '#3A1078', '#3E54AC', '#655DBB']
+          data: [2000, 1800, 1200, 1350,],
+          backgroundColor: ['#0000ff', '#FF0000', '#3E54AC', '#655DBB']
       }
       
   ]
@@ -69,3 +68,55 @@ const config = {
 }
 
 const chart1 = new Chart(document.getElementById("js--grafiek1"), config);
+
+const labels2 = [
+"week 1",
+"week 2",
+"week 3",
+"week 4",
+];
+
+const gas = {
+  labels: labels2,
+  datasets:[
+      {
+          label: "gasverbruik",
+          data: [2000, 1800, 1200, 1350],
+          backgroundColor: ['#0000ff', '#FF0000', '#3E54AC', '#655DBB']
+      }
+      
+  ]
+}
+const config1 = {
+  type: 'doughnut',
+  data: gas,
+}
+
+const chart2 = new Chart(document.getElementById("js--grafiek2"), config1)
+
+const labels3 = [
+  "week 1",
+  "week 2",
+  "week 3",
+  "week 4",
+  ];
+  
+  const jaar = {
+    labels: labels3,
+    datasets:[
+        {
+            label: "jaarverbruik",
+            data: [2000, 1800, 1600, 1350],
+            backgroundColor: ['#0000ff', '#FF0000', '#3E54AC', '#655DBB']
+        }
+        
+    ]
+  }
+  const config3 = {
+    type: 'bar',
+    data: jaar,
+  }
+  
+  const chart3 = new Chart(document.getElementById("js--grafiek3"), config3)
+
+
