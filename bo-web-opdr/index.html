@@ -11,7 +11,7 @@
 </head>
 <body onload="startTime()">
     <header>
-        <img src="img/zonnehuis_logo.webp">
+        <img src="img/zonnehuis_logo.webp" alt="zonnehuis_logo">
         <p class="zonnehuisText">Het Zonnehuis</p>
         <a href="engels.html" class="translateButton">EN</a>
     </header>
@@ -19,19 +19,19 @@
 
     <p class="bodyTitle0">Algemene Informatie</p>
     <div>
-        <img src="img/clock.webp">
+        <img src="img/clock.webp" alt="klok logo">
         <span id="js--clock"></span>
     </div>
     <div>
-        <img src="img/weather.webp">
+        <img src="img/weather.webp" alt="weer icoon">
         <span id="js--temp"></span>
     </div>
     <div>
-        <img src="img/humidity.webp">
+        <img src="img/humidity.webp" alt="vochtigheids logo">
         <span id="js--humidity"></span>
     </div>
     <div>
-        <img src="img/sunrise.webp">
+        <img src="img/sunrise.webp" alt="zonsopgang logo">
         <span id="js--sunrise"></span>
         <br>
         <span id="js--sunset"></span>
@@ -39,25 +39,25 @@
 
     <p class="bodyTitle1">Binnentempraturen en Lichtsterktes</p>
     <div>
-        <img src="img/livingroom.webp">
+        <img src="img/livingroom.webp" alt="woonkamer logo">
         <span id="js--livingroomTemp"></span>
         <br>
         <span id="js--livingroomLight"></span>
     </div>
     <div>
-        <img src="img/bathroom.webp">
+        <img src="img/bathroom.webp" alt="badkamer logo">
         <span id="js--bathroomTemp"></span>
         <br>
         <span id="js--bathroomLight"></span>
     </div>
     <div>
-        <img src="img/bedroom.webp">
+        <img src="img/bedroom.webp" alt="slaapkamer logo">
         <span id="js--bedroomTemp"></span>
         <br>
         <span id="js--bedroomLight"></span>
     </div>
     <div>
-        <img src="img/kitchen.webp">
+        <img src="img/kitchen.webp" alt="keuken logo">
         <span id="js--kitchenTemp"></span>
         <br>
         <span id="js--kitchenLight"></span>
@@ -72,10 +72,17 @@
         <main class="dashboard">
             <section class="section--first">
             <article class="card">
+                <h2 class="title">waterverbruik</h2>
                 <canvas id="js--grafiek1"></canvas>
             </article>
-            <article class="card"></article>
-            <article class="card"></article>
+            <article class="card">
+                <h2 class="title"> gasverbruik</h2>
+                <canvas id="js--grafiek2"></canvas>
+            </article>
+            <article class="card">
+                <h2 class="title"> Jaarverbruik</h2>
+                <canvas id="js--grafiek3"></canvas>
+            </article>
         </section>
         </main>
     </body>
