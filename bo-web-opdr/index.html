@@ -11,27 +11,27 @@
 </head>
 <body onload="startTime()">
     <header>
-        <img src="img/zonnehuis_logo.webp">
-        <p class="zonnehuisText">Het Zonnehuis</p>
+        <img src="img/zonnehuis_logo.webp" alt="zonnehuis_logo">
+        <h1 class="zonnehuisText">Het Zonnehuis</h1>
         <a href="engels.html" class="translateButton">EN</a>
     </header>
     <article>
 
     <p class="bodyTitle0">Algemene Informatie</p>
     <div>
-        <img src="img/clock.webp">
+        <img src="img/clock.webp" alt="klok logo">
         <span id="js--clock"></span>
     </div>
     <div>
-        <img src="img/weather.webp">
+        <img src="img/weather.webp" alt="weer icoon">
         <span id="js--temp"></span>
     </div>
     <div>
-        <img src="img/humidity.webp">
+        <img src="img/humidity.webp" alt="vochtigheids logo">
         <span id="js--humidity"></span>
     </div>
     <div>
-        <img src="img/sunrise.webp">
+        <img src="img/sunrise.webp" alt="zonsopgang logo">
         <span id="js--sunrise"></span>
         <br>
         <span id="js--sunset"></span>
@@ -39,25 +39,25 @@
 
     <p class="bodyTitle1">Binnentempraturen en Lichtsterktes</p>
     <div>
-        <img src="img/livingroom.webp">
+        <img src="img/livingroom.webp" alt="woonkamer logo">
         <span id="js--livingroomTemp"></span>
         <br>
         <span id="js--livingroomLight"></span>
     </div>
     <div>
-        <img src="img/bathroom.webp">
+        <img src="img/bathroom.webp" alt="badkamer logo">
         <span id="js--bathroomTemp"></span>
         <br>
         <span id="js--bathroomLight"></span>
     </div>
     <div>
-        <img src="img/bedroom.webp">
+        <img src="img/bedroom.webp" alt="slaapkamer logo">
         <span id="js--bedroomTemp"></span>
         <br>
         <span id="js--bedroomLight"></span>
     </div>
     <div>
-        <img src="img/kitchen.webp">
+        <img src="img/kitchen.webp" alt="keuken logo">
         <span id="js--kitchenTemp"></span>
         <br>
         <span id="js--kitchenLight"></span>
@@ -69,22 +69,28 @@
             
 
         <!-- <canvas id="myChart" style="width:100%;max-width:6000px;max-height: 80%;"></canvas> -->
-        <main class="dashboard">
-            <section class="section--first">
+        <div class="dashboard">
+        <section class="section--first">
             <article class="card">
-                <h2 class="title">waterverbruik</h2>
-                <canvas id="js--grafiek1"></canvas>
+                <h2 class="title">Waterverbruik</h2>
+                <canvas id="js--grafiek1" width="300px"></canvas>
             </article>
             <article class="card">
-                <h2 class="title"> gasverbruik</h2>
+                <h2 class="title">Gasverbruik</h2>
                 <canvas id="js--grafiek2"></canvas>
             </article>
             <article class="card">
-                <h2 class="title"> Jaarverbruik</h2>
-                <canvas id="js--grafiek3"></canvas>
+                <h2 class="title">Lichtverbruik</h2>
+                <canvas id="js--grafiek4"></canvas>
             </article>
         </section>
-        </main>
+        <section class="section--second">
+            <article class="card">
+                <h2 class="title">Jaarverbruik Water</h2>
+                <canvas id="js--grafiek3" width="1000"></canvas>
+            </article>
+        </section>
+    </div>
     </body>
     </article>
 </body>

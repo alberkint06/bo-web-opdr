@@ -95,10 +95,10 @@ const config1 = {
 const chart2 = new Chart(document.getElementById("js--grafiek2"), config1)
 
 const labels3 = [
-  "week 1",
-  "week 2",
-  "week 3",
-  "week 4",
+  "1e kwartaal",
+  "2e kwartaal",
+  "3e kwartaal",
+  "4e kwartaal",
   ];
   
   const jaar = {
@@ -117,6 +117,29 @@ const labels3 = [
     data: jaar,
   }
   
-  const chart3 = new Chart(document.getElementById("js--grafiek3"), config3)
+  const chart3 = new Chart(document.getElementById("js--grafiek3"), config3);
 
-
+  const labels4 = [
+    "week 1",
+    "week 2",
+    "week 3",
+    "week 4",
+    ];
+    
+    const licht = {
+      labels: labels4,
+      datasets:[
+          {
+              label: "lichtverbruik",
+              data: [2000 , 1800, 1200, 1350],
+              backgroundColor: ['#0000ff', '#FF0000', '#3E54AC', '#655DBB']
+          }
+          
+      ]
+    }
+    const config2 = {
+      type: 'doughnut',
+      data: gas,
+    }
+    
+    const chart4 = new Chart(document.getElementById("js--grafiek4"), config1);
