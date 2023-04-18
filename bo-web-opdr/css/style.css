@@ -10,6 +10,7 @@ html{
 
 body{
     font-family: sans-serif;
+    display: block;
 }
 
 body > header{
@@ -55,55 +56,52 @@ body > article{
 
 .dashboard{
     width: 100%;
-    height: 85vh;
-    align-items: center;
-    justify-content: center;
+    height: 120rem;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    gap: 2rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    list-style: none;
 }
 
 .section--first {
-    grid-column: 1/6;
     grid-row: span 13;
-    display: flex;
-    flex-wrap: nowrap;
     gap: 2rem;
-    padding-left: 48rem;
     padding-top: 0;
     padding-bottom: 2rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-height: 80%;
-    max-width: 70%;
+    list-style: none;
 }
-
 
 .card{
     background: #eee;
-    width: 30rem;
-    height: 50%;
     flex-grow: 1;
     box-shadow: 0 2rem 5rem rgba(0,0,0,0.2);
 }
 
-.section--second{
-    display: flex;
-    grid-column: 1/6;
-    grid-row: span 13;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    padding-left: 48rem;
-    padding-top: 0;
-    padding-bottom: 2rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-height: 80%;
-    max-width: 70%;
-    
+.card--water{
+    grid-column: 1 / 8;
+    grid-row: 1 / 8;
+}
+
+.card--gas{
+    grid-column: 8 / 16;
+    grid-row: 1 / 8;
+}
+
+.card--elec{
+    grid-column: 16 / 24;
+    grid-row: 1 / 8;
+}
+
+.circle{
+    width: 30rem;
+}
+
+.card--jaar{
+    grid-column: 1 / 24;
+    grid-row: 8 / 20;
 }
 
 body > article > .bodyTitle0, .bodyTitle1, .bodyTitle2{
@@ -157,8 +155,11 @@ body > article > div{
     padding: 7px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 72rem){
     body {
-        font-size: 30px;
+        background: brown;
+        min-height: 300vh;
+        grid-template-rows: 10rem repeat(5,1fr) 10rem;
     }
+    
 }

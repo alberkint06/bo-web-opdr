@@ -69,28 +69,24 @@
             
 
         <!-- <canvas id="myChart" style="width:100%;max-width:6000px;max-height: 80%;"></canvas> -->
-        <div class="dashboard">
-        <section class="section--first">
-            <article class="card">
-                <h2 class="title">Waterverbruik</h2>
-                <canvas id="js--grafiek1" width="300px"></canvas>
-            </article>
-            <article class="card">
-                <h2 class="title">Gasverbruik</h2>
-                <canvas id="js--grafiek2"></canvas>
-            </article>
-            <article class="card">
-                <h2 class="title">Lichtverbruik</h2>
-                <canvas id="js--grafiek4"></canvas>
-            </article>
-        </section>
-        <section class="section--second">
-            <article class="card">
+        <ul class="dashboard">
+            <li class="card card--water">
+                <h2 class="title">Water verbruik</h2>
+                <canvas id="js--grafiek1" class="circle"></canvas>
+            </li>
+            <li class="card card--gas">
+                <h2 class="title">Gas verbruik</h2>
+                <canvas id="js--grafiek2" class="circle"></canvas>
+            </li>
+            <li class="card card--elec">
+                <h2 class="title">Electriciteit verbruik</h2>
+                <canvas id="js--grafiek4" class="circle"></canvas>
+            </li>
+            <li class="card card--jaar">
                 <h2 class="title">Jaarverbruik Water</h2>
-                <canvas id="js--grafiek3" width="1000"></canvas>
-            </article>
-        </section>
-    </div>
+                <canvas id="js--grafiek3"></canvas>
+            </li>
+        </ul>
     </body>
     </article>
 </body>
