@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Een dashboard waar je al je statestieken voor eht energieverbruik van je woning bij kan houden">
+    <meta name="keywords" content="Dashboard, Zonnehuis, Energieverbruik">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energieverbruik Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body onload="startTime()">
+    <header>
+        <img src="img/zonnehuis_logo.webp">
+        <h1 class="zonnehuisText">Het Zonnehuis</h1>
+        <a href="engels.html" class="translateButton">EN</a>
+    </header>
+    <article>
+
+    <h2 class="bodyTitle0">Algemene Informatie</h2>
+    <div>
+        <img src="img/clock.webp" alt="Dit is een foto van een simpele klok">
+        <span id="js--clock"></span>
+    </div>
+    <div>
+        <img id="js--weatherImg" alt="Dit is een foto van het weer">
+        <span id="js--temp"></span>
+    </div>
+    <div>
+        <img src="img/humidity.webp" alt="Dit is een foto van een druppel met een een procent erin wat de luchtvochtigheid aangeeft">
+        <span id="js--humidity"></span>
+    </div>
+    <div>
+        <img src="img/sunrise.webp" alt="Dit is een foto van een zonsopgang">
+        <span id="js--sunrise"></span>
+        <br>
+        <span id="js--sunset"></span>
+    </div>
+
+    <h2 class="bodyTitle1">Binnentempraturen en Lichtsterktes</h2>
+    <div>
+        <img src="img/livingroom.webp" alt="Dit is een foto van woonkamer">
+        <span class="js--roomtemp"></span>
+        <br>
+        <span class="js--brightness"></span>
+    </div>
+    <div>
+        <img src="img/bathroom.webp" alt="Dit is een foto van badkamer">
+        <span class="js--roomtemp"></span>
+        <br>
+        <span class="js--brightness"></span>
+    </div>
+    <div>
+        <img src="img/bedroom.webp" alt="Dit is een foto van slaapkamer">
+        <span class="js--roomtemp"></span>
+        <br>
+        <span class="js--brightness"></span>
+    </div>
+    <div>
+        <img src="img/kitchen.webp" alt="Dit is een foto van keuken">
+        <span class="js--roomtemp"></span>
+        <br>
+        <span class="js--brightness"></span>
+    </div>
+
+    <h2 class="bodyTitle2"> Grafieken</h2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <body>
+            
+
+         <!-- <canvas id="myChart" style="width:100%;max-width:6000px;max-height: 80%;"></canvas> -->
+         <ul class="dashboard">
+            <li class="card card--water">
+                <h2 class="title">Water verbruik</h2>
+                <canvas id="js--grafiek1" class="circle"></canvas>
+            </li>
+            <li class="card card--gas">
+                <h2 class="title">Gas verbruik</h2>
+                <canvas id="js--grafiek2" class="circle"></canvas>
+            </li>
+            <li class="card card--elec">
+                <h2 class="title">Electriciteit verbruik</h2>
+                <canvas id="js--grafiek4" class="circle"></canvas>
+            </li>
+            <li class="card card--jaar">
+                <h2 class="title">Jaarverbruik</h2>
+                <canvas id="js--grafiek3" class="bar"></canvas>
+            </li>
+        </ul>
+        
+        <ul class="gameList">
+            <li>
+                <h2 class="bodyTitle1">Speel onze game</h2>
+                <a href="game.html" class="gameButton">Game</a>
+            </li>
+
+        </ul>
+
+    </body>
+    </article>
+</body>
+</html>

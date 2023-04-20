@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: #39aea9;
+    padding: 4rem;
+}
+
+body > header{
+    height: 10rem;
+    display: flex;
+    background-color: rgba(255,255,255,0.9);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    border: none;
+    border-radius: 0.75rem;
+}
+
+body > header > .zonnehuisText{
+    color: black;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+body > header > .translateButton{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 4rem;
+    font-size: 1.6rem;
+}
+
+body > header > img{
+    width: 6.4rem;
+    height: 6.4rem;
+    align-items: center;
+    margin-left: 0.4rem;
+}
+
+
+.cards{
+    min-height:85vh;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+
+.card{
+    list-style: none;
+    border-radius: 1rem;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 2rem 0rem 0 rbga(0,0,0,0.2);
+}
+
+.card--first{
+    grid-column: 1 / 10;
+    grid-row: 1 / 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.card--first > img{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.card--first > button{
+    width: 20rem;
+    height: 6rem;
+    font-size:  2rem;
+    font-family: sans-serif;
+    border: none;
+    background-color: #ee1515;
+    color: #eee;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,197 @@
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    display: block;
+}
+
+body > header{
+    height: 10rem;
+    display: flex;
+    background-color: #111111;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+
+body > header > .zonnehuisText{
+    color: white;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+body > header > .translateButton{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 4rem;
+    font-size: 1.6rem;
+}
+
+body > footer > p{
+    color: white;
+}
+
+body > header > img{
+    width: 6.4rem;
+    height: 6.4rem;
+    align-items: center;
+    margin-left: 0.4rem;
+}
+
+body > article{
+    padding-top: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.dashboard{
+    width: 100%;
+    height: 120rem;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    gap: 2rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    list-style: none;
+}
+
+.section--first {
+    grid-row: span 13;
+    gap: 2rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    list-style: none;
+}
+
+.card{
+    background: #eee;
+    flex-grow: 1;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card--water{
+    grid-column: 1 / 8;
+    grid-row: 1 / 8;
+}
+
+.card--gas{
+    grid-column: 8 / 16;
+    grid-row: 1 / 8;
+}
+
+.card--elec{
+    grid-column: 16 / 24;
+    grid-row: 1 / 8;
+}
+
+.circle{
+    display: flex;
+    max-height: 30rem;
+    max-width: 30rem;
+}
+
+.card--jaar{
+    grid-column: 1 / 24;
+    grid-row: 8 / 20;
+}
+
+.bar{
+    max-height: 50rem;
+    max-width: 120rem;
+}
+
+body > article > .bodyTitle0, .bodyTitle1, .bodyTitle2{
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: left;
+    margin-top: 2rem;
+    border-bottom: 1px solid #111111;
+    margin-bottom: 4rem;
+    padding-bottom: 0.2rem;
+    padding-left: 4rem;
+}
+
+body > article > .bodyTitle1, .bodyTitle2{
+    margin-top: 16rem;
+}
+
+body > article > div {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 30rem;
+    border: 2px solid #111111;
+    border-radius: 5px;
+    height: 32rem;
+    margin-left: 4rem;
+    margin-top: 0.8rem;
+    margin-right: 4.8rem;
+    flex-shrink: 0;
+}
+
+div > img {
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 3.4rem;
+    margin-top: 2rem;
+}
+
+div > span {
+    display: block;
+    font-size: 3.2rem;
+}
+
+body > article > div{
+    size: 200%;
+} 
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+
+.gameList{
+    margin-bottom: 4rem;
+    list-style: none;
+    object-fit: contain;
+}
+
+.gameButton{
+    width: 40rem;
+    height: 12rem;
+    font-size:  6rem;
+    padding: 1rem;
+    margin-left: 4rem;
+    font-family: sans-serif;
+    border: none;
+    background-color: black;
+    color: #eee;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 72rem){
+    body {
+        min-height: 300vh;
+        grid-template-rows: 10rem repeat(5,1fr) 10rem;
+    }   
+}
